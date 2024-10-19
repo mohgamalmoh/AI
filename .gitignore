@@ -1,0 +1,106 @@
+# editor
+.idea
+.vscode
+
+# dependencies
+**/node_modules
+**/package-lock.json
+**/yarn.lock
+
+## logs
+**/logs
+**/*.log
+
+## pnpm
+Flowise/.pnpm-store/
+
+## build
+**/dist
+**/build
+
+## temp
+**/tmp
+**/temp
+
+## test
+**/coverage
+
+# misc
+Flowise/.DS_Store
+
+## env
+Flowise/.env.local
+Flowise/.env.development.local
+Flowise/.env.test.local
+Flowise/.env.production.local
+Flowise/.env
+
+## turbo
+Flowise/.turbo
+
+## secrets
+**/*.key
+**/api.json
+
+## uploads
+**/uploads
+
+## compressed
+**/*.tgz
+
+## vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+## other keys
+Flowise/*.key
+Flowise/*.keys
+Flowise/*.priv
+Flowise/*.rsa
+Flowise/*.key.json
+
+## ssh keys
+Flowise/*.ssh
+Flowise/*.ssh-key
+Flowise/.key-mrc
+
+## Certificate Authority
+*Flowise/.ca
+
+## Certificate
+Flowise/*.crt
+
+## Certificate Sign Request
+Flowise/*.csr
+
+## Certificate
+Flowise/*.der
+
+## Key database file
+Flowise/*.kdb
+
+## OSCP request data
+Flowise/*.org
+
+## PKCS #12
+Flowise/*.p12
+
+## PEM-encoded certificate data
+Flowise/*.pem
+
+## Random number seed
+Flowise/*.rnd
+
+## SSLeay data
+Flowise/*.ssleay
+
+## S/MIME message
+Flowise/*.smime
+Flowise/*.vsix
