@@ -6,3 +6,5 @@
 
 ### the directory "AI/docker" contains a docker-compose file that referes to the "AI/Flowise/Dockerfile" to do the build.
 ### this docker-compose file will be a central file to do other builds for other projects like n8n
+
+in AI/Flowise/Dockerfile, we just added this "RUN apk add --no-cache git" as it is required fo the build
