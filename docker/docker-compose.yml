@@ -60,7 +60,7 @@ services:
             - 5477:5432
 
     n8n:
-        image: docker.n8n.io/n8nio/n8n
+        image: n8nio/n8n:1.31.0
         restart: always
         environment:
             - DB_TYPE=postgresdb
@@ -70,6 +70,11 @@ services:
             - DB_POSTGRESDB_USER=${POSTGRES_NON_ROOT_USER}
             - DB_POSTGRESDB_PASSWORD=${POSTGRES_NON_ROOT_PASSWORD}
             - N8N_SECURE_COOKIE=false
+            - N8N_BASIC_AUTH_ACTIVE=true
+            - N8N_BASIC_AUTH_USER=admin@mail.com
+            - N8N_BASIC_AUTH_PASSWORD=pass
+            - WEBHOOK_URL=http://localhost:5678
+            - N8N_DISABLE_UI_ACCESS=false
         ports:
             - 5678:5678
         links:
