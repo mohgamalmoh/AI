@@ -81,6 +81,7 @@ services:
             - N8N_DISABLE_UI_ACCESS=false
         expose:
             - '5678'  # Expose the internal n8n port to NGINX
+            - '80'
         ports:
             - 5679:5678
         networks:
