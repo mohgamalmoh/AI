@@ -97,6 +97,7 @@ services:
         image: nginx:latest
         restart: always
         ports:
+            - '80:80'  # Expose HTTPS for external access
             - '3000:3000'  # Expose HTTPS for external access
             - '5678:5678'  # Expose HTTPS for external access
             - '5680:5680'  # Expose HTTPS for external access
