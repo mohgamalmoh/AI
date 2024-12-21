@@ -81,7 +81,6 @@ services:
             - N8N_DISABLE_UI_ACCESS=false
         expose:
             - '5678'  # Expose the internal n8n port to NGINX
-            - '80'
         ports:
             - 5679:5678
         networks:
@@ -98,7 +97,6 @@ services:
         image: nginx:latest
         restart: always
         ports:
-            - '80:80'  # Expose HTTPS for external access
             - '3000:3000'  # Expose HTTPS for external access
             - '5678:5678'  # Expose HTTPS for external access
             - '5680:5680'  # Expose HTTPS for external access
